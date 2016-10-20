@@ -94,9 +94,28 @@ window.onload = function () {
         for (var i = 0; i < lengthArray; ++i) {
             result = result + array[i];
         }
-
         return result;
     }
 
     //console.log(sum(range(1, 10)));
+
+    function reverse(array) {
+        var newArray = [];
+        for (var i = array.length - 1; i >= 0; --i) {
+            newArray.push(array[i]);
+        }
+        return newArray;
+    }
+
+    console.log(reverse(["A", "B", "C"]));
+
+    //function reverseArrayInPlace(array) {
+    //    for (var i = 0; i <= array.length - 1; ++i) {
+    //        array[i] = array[array.length - (1 + i)];
+    //        console.log(array[array.length - (1 + i)]);
+    //    }
+    //    return array;
+    //}
+    //
+    //console.log(reverseArrayInPlace([5, 4, 3, 2, 1]));
 };
