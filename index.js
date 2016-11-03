@@ -107,15 +107,23 @@ window.onload = function () {
         return newArray;
     }
 
-    console.log(reverse(["A", "B", "C"]));
+    //console.log(reverse(["A", "B", "C"]));
 
-    //function reverseArrayInPlace(array) {
-    //    for (var i = 0; i <= array.length - 1; ++i) {
-    //        array[i] = array[array.length - (1 + i)];
-    //        console.log(array[array.length - (1 + i)]);
-    //    }
-    //    return array;
-    //}
-    //
+    function reverseArrayInPlace(array) {
+        for (var i = 0; i <= array.length - 1; ++i) {
+            array[i] = array[array.length - (1 + i)];
+            console.log(array.length - (1 + i));
+        }
+        return array;
+    }
+
     //console.log(reverseArrayInPlace([5, 4, 3, 2, 1]));
+
+    function arrayToList(array) {
+        var list = null;
+        for (var i = array.length - 1; i >= 0; i--)
+            list = {value: array[i], rest: list};
+        return list;
+    }
+    console.log(arrayToList(["10", "20"]));
 };
