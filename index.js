@@ -125,5 +125,14 @@ window.onload = function () {
             list = {value: array[i], rest: list};
         return list;
     }
-    console.log(arrayToList(["10", "20"]));
+
+    console.log(listToArray(arrayToList(["10", "20", "30"])));
+
+    function listToArray (list) {
+        var array = [];
+        var node = list;
+        for (; node; node = node.rest)
+            array.push(node.value);
+        return array;
+    }
 };
