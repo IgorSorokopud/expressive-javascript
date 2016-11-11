@@ -126,8 +126,6 @@ window.onload = function () {
         return list;
     }
 
-    console.log(listToArray(arrayToList(["10", "20", "30"])));
-
     function listToArray (list) {
         var array = [];
         var node = list;
@@ -135,4 +133,5 @@ window.onload = function () {
             array.push(node.value);
         return array;
     }
+    console.log(listToArray(arrayToList(["10", "20", "30"])));
 };
