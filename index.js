@@ -1,4 +1,5 @@
 window.onload = function () {
+    
     /* FizzBuzz */
     function fizzBuzz() {
         for (var i = 1; i <= 100; ++i) {
