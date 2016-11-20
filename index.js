@@ -14,7 +14,6 @@ window.onload = function () {
             }
         }
     }
-
     //fizzBuzz();
 
     var chess = '';
@@ -35,7 +34,6 @@ window.onload = function () {
         var result = arg1 < arg2 ? arg1 : arg2;
         return result;
     }
-
     //console.log(min(-56, 11));
 
     function isEven(arg) {
@@ -48,7 +46,6 @@ window.onload = function () {
             isEven(arg - 2);
         }
     }
-
     //console.log(isEven(10));
 
     function countBs(stringB, symbol) {
@@ -66,7 +63,6 @@ window.onload = function () {
             return 'такой буквы нет!';
         }
     }
-
     //console.log(countBs('dfdf3434', 'd'));
 
     function range(start, finish, step) {
@@ -85,7 +81,6 @@ window.onload = function () {
 
         return resultArray;
     }
-
     //console.log(range(5, 1, -1));
 
     function sum(array) {
@@ -97,7 +92,6 @@ window.onload = function () {
         }
         return result;
     }
-
     //console.log(sum(range(1, 10)));
 
     function reverse(array) {
@@ -107,7 +101,6 @@ window.onload = function () {
         }
         return newArray;
     }
-
     //console.log(reverse(["A", "B", "C"]));
 
     function reverseArrayInPlace(array) {
@@ -117,7 +110,6 @@ window.onload = function () {
         }
         return array;
     }
-
     //console.log(reverseArrayInPlace([5, 4, 3, 2, 1]));
 
     function arrayToList(array) {
